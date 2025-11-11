@@ -1,0 +1,27 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Ingestor service
+  - job_name: 'ingestor'
+    static_configs:
+      - targets: ['host.docker.internal:8081']
+    metrics_path: /metrics
+
+  # Processor service
+  - job_name: 'processor'
+    static_configs:
+      - targets: ['host.docker.internal:8082']
+    metrics_path: /metrics
+
+  # Query service
+  - job_name: 'query'
+    static_configs:
+      - targets: ['host.docker.internal:8083']
+    metrics_path: /metrics

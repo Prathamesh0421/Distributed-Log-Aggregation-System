@@ -1,0 +1,46 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+dist/
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.txt
+
+# Go workspace file
+go.work
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+
+# Docker volumes
+data/
+minio-data/
+
+# Logs
+*.log
+
+# Generated files
+api/**/*.pb.go
+api/**/*_grpc.pb.go
+
+# OS files
+.DS_Store
+Thumbs.db
+
+CLAUDE.md
