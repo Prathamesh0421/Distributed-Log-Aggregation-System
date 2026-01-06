@@ -44,3 +44,6 @@ api/**/*_grpc.pb.go
 Thumbs.db
 
 CLAUDE.md
+SETUP_COMPLETE.md
+INGESTOR_COMPLETE.md
+MVP_COMPLETE.md
